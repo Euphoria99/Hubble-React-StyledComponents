@@ -1,6 +1,6 @@
 import { ThemeProvider  } from 'styled-components';
 import  Header  from './components/Header'
-import { Container } from './components/styles/Container.styled'
+import { StyledContainer } from './components/styles/Container.styled'
 import GlobalStyles from './components/styles/Global'
 
 const theme = {
@@ -18,9 +18,9 @@ function App() {
     <>
     <GlobalStyles />
     <Header />
-    <Container>
+    <StyledContainer>
       <h1>Hello world</h1>
-    </Container>
+    </StyledContainer>
     </>
     </ThemeProvider>
   );
