@@ -5,4 +5,9 @@ export const StyledNavbar = styled.nav`
     align-item:center;
     justify-content: space-between;
     margin-bottom: 40px;
+
+
+    @media(max-width: ${({theme}) => theme.mobile}){
+        flex-direction: column;
+    }
 `
