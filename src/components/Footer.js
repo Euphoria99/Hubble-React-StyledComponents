@@ -4,6 +4,7 @@ import { StyledFlex } from "./styles/Flex.styled";
 import { StyledFooter } from "./styles/Footer.styled";
 
 export default function Footer() {
+  let currentYear = new Date().getFullYear();
   return (
     <StyledFooter>
       <StyledContainer>
@@ -29,6 +30,7 @@ export default function Footer() {
           </ul>
           <SocialIcons />
         </StyledFlex>
+        <p>&copy; {currentYear} Huddle. All rights reserved</p>
       </StyledContainer>
     </StyledFooter>
   );
